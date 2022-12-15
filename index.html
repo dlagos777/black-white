@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="/estilos"/>
+        <title>Desafío Black&White</title>
+    </head>
+
+    <body>
+        <div class="container my-5">
+
+            <div class="text-center">
+                <h1>Convertidor Imagen</h1>
+                <h2>Black & White</h2>
+            </div>
+
+            <div class="container my-5">
+                <form action="http://localhost:8080/imagen">
+                    <div class="form-group">
+                        <label for="inputAddress" class="text-white">URL Imagen:</label>
+                        <input
+                            name="imagen"
+                            type="address"
+                            class="form-control"
+                            id="inputAddress"
+                            aria-describedby="adressHelp">
+                        <small id="addressHelp" class="form-text text-muted">Ingrese la URL de la imagen a convertir.
+                        </small>
+                    </div>
+                    <button type="submit" class="btn btn-outline-light">Subir imagen</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
